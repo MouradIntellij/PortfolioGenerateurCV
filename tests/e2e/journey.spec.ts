@@ -5,7 +5,7 @@ test("créer, gérer, générer et publier un portfolio", async ({ page }) => {
   const slug = "test-" + Date.now();
   const password = "Test-browser-2026";
   await page.goto("/inscription");
-  await page.getByLabel("Nom complet").fill("Camille Martin");
+  await page.getByLabel("Nom complet").fill("Mourad Sehboub");
   await page.getByLabel("Adresse de votre portfolio").fill(slug);
   await page
     .getByLabel("Courriel", { exact: true })
@@ -72,7 +72,7 @@ test("créer, gérer, générer et publier un portfolio", async ({ page }) => {
     await expect(page.getByRole("status")).toBeVisible();
     await page.goto("/p/" + slug);
     await expect(
-      page.getByRole("heading", { name: "Camille Martin", exact: true }),
+      page.getByRole("heading", { name: "Mourad Sehboub", exact: true }),
     ).toBeVisible();
     const accessibility = await new AxeBuilder({ page })
       .withTags(["wcag2a", "wcag2aa"])
@@ -94,7 +94,7 @@ test("portfolio lisible sur mobile sans débordement horizontal", async ({
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/demo");
   await expect(
-    page.getByRole("heading", { name: "Camille Martin", exact: true }),
+    page.getByRole("heading", { name: "Mourad Sehboub", exact: true }),
   ).toBeVisible();
   expect(
     await page.evaluate(

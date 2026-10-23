@@ -15,8 +15,8 @@ export const demo: Portfolio = {
     version: 1,
   },
   profile: {
-    full_name: "Camille Martin",
-    headline: "Développeuse web & créatrice d’expériences",
+    full_name: "Mourad Sehboub",
+    headline: "Développeur web & créateur d’expériences",
     bio: "Je transforme des idées en interfaces utiles, accessibles et soignées. Étudiante en informatique à Montréal, je m’intéresse aux produits qui simplifient le quotidien.",
     email: "camille@example.com",
     phone: "",

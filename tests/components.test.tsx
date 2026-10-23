@@ -17,7 +17,7 @@ describe("Interface", () => {
     const click = vi.fn();
     render(<PortfolioView data={demo} onDownload={click} />);
     expect(
-      screen.getByRole("heading", { name: "Camille Martin" }),
+      screen.getByRole("heading", { name: "Mourad Sehboub" }),
     ).toBeTruthy();
     expect(screen.getByRole("heading", { name: "Agora" })).toBeTruthy();
     fireEvent.click(screen.getByRole("button", { name: "Télécharger mon CV" }));

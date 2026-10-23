@@ -28,7 +28,7 @@ describe("PDF professionnel", () => {
       const b = await generateCV(demo, cvSchema.parse({ template }));
       expect(b.subarray(0, 5).toString()).toBe("%PDF-");
       const text = await pdfText(b);
-      expect(text).toContain("Camille Martin");
+      expect(text).toContain("Mourad Sehboub");
       expect(text).toContain("Équilibre");
       expect(text.split("\f").length - 1).toBeLessThanOrEqual(2);
     });

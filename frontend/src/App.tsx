@@ -165,9 +165,9 @@ function Landing() {
             <div className="mini-content">
               <div className="eyebrow">BONJOUR, MOI C’EST</div>
               <h2>
-                Camille Martin<span>.</span>
+                Mourad Sehboub<span>.</span>
               </h2>
-              <p>Développeuse web & créatrice d’expériences</p>
+              <p>Développeure web & créateur d’expériences</p>
               <div className="mini-avatar">CM</div>
               <div className="tags">
                 <span>React</span>
@@ -188,8 +188,8 @@ function Landing() {
           </div>
           <div className="mini-cv">
             <FileText size={23} />
-            <strong>CAMILLE MARTIN</strong>
-            <small>DÉVELOPPEUSE WEB</small>
+            <strong>Mourad Sehboub</strong>
+            <small>DÉVELOPPEUS WEB</small>
             <i />
             <i />
             <i />
@@ -281,7 +281,7 @@ function Auth({ register = false }: { register?: boolean }) {
                   minLength={2}
                   maxLength={160}
                   autoComplete="name"
-                  placeholder="Camille Martin"
+                  placeholder="Mourad Sehboub"
                 />
               </label>
               <label>
